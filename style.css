@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: khaki;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: rgba(123, 224, 21, 0.219);
+    border-bottom: 1px solid #3314df9c;
+
+
+}
+
+.logo {
+    color: rgb(4, 8, 8);
+    font-size: 25px;
+    font-weight: 800;
+
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: blueviolet;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: hotpink;
+
+
+}
+
+#menu {
+    display: none;
+
+}
+
+.menu-icono {
+    width: 25px;
+
+}
+
+.menu label {
+    display: none;
+    cursor: pointer;
+}
+
+.header-info h1 {
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+}
+
+.header-info p {
+    color: blue;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 10;
+    background-color: mediumspringgreen;
+    font-size: 20px;
+    color: darkgreen;
+    text-transform: uppercase;
+
+}
+
+.btn-1:hover {
+    background-color: teal;
+}
+
+.obras {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.obras-1 {
+    width: 40%;
+    padding-right: 100px;
+
+}
+
+.obras-1 h2 {
+    font-size: 40px;
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 35px;
+
+
+}
+
+.obras-1 p {
+    font-size: 16px;
+    color: blue;
+    margin-bottom: 35px;
+
+}
+
+.obras-1 span {
+    color: chocolate;
+
+}
+
+.btn-2 {
+    display:inline-block;
+    padding: 8px 45px;
+    border-radius: 20px;
+    background-color: rgba(121, 22, 214, 0.466);
+    font-size: 18px;
+    color: rgb(19, 53, 53);
+    text-transform: uppercase;
+}
+.btn-2:hover {
+    background-color: rgb(17, 106, 238);
+}
+.img-1, .img-2 {
+    width: 255px;
+    margin-right: 20px;
+
+
+}
+.footer {
+    border-top: 1px solid blueviolet;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(128, 255, 0, 0.459);
+}
+
+.footer h3 {
+    color: brown;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.links ul {
+    display: flex;
+
+}
+.links ul li {
+    margin-right: 35px;
+
+}
+
+.links ul li a {
+    color: blue;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: dodgerblue;
+        display: none;
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+     
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+    }
+
+    .header-info h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+    }
+
+    .obras {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+
+    }
+
+    .obras-1 {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
+
+    .obras-1 h2 {
+        margin-bottom: 15px;
+
+    }
+    
+    .btn-2 {
+        margin-bottom: 35px;
+
+    }
+
+    .obras-2 {
+        order: 2;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .img-1, .img-2 {
+        margin: 0 0 20px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h3 {
+        margin-bottom: 15px;
+
+    }
+
+    .links ul li {
+        margin: o 10px;
+    }
+}
